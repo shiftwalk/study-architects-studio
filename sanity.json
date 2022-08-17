@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "5r8jwxub",
+    "dataset": "production"
+  },
   "project": {
     "name": "shiftwalk-sanity-starter"
-  },
-  "api": {
-    "projectId": "your-id-here",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",

@@ -11,6 +11,37 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Content Heading',
+      name: 'contentHeading',
+      type: 'text',
+      rows: 3,
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Image Grid',
+      name: 'imageGrid',
+      description: 'The array of images that can be moved around on the home page (4 required)',
+      type: 'array',
+      of: [
+        {
+          name: 'image',
+          type: 'defaultImage',
+          title: 'Image',
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
+      validation: Rule => Rule.required().min(4).max(4)
+    },
+    {
+      title: 'Content Text',
+      name: 'contentText',
+      type: 'array', 
+      of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'
