@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "shiftwalk-sanity-starter"
+    "name": "study-architects-studio"
   },
   "plugins": [
     "@sanity/base",
@@ -17,7 +17,7 @@
     "media",
     "@sanity/production-preview",
     "vercel-deploy",
-    "order-documents"
+    "@sanity/orderable-document-list"
   ],
   "env": {
     "development": {

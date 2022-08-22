@@ -13,7 +13,18 @@ export default {
     {
       title: 'Hero Image',
       name: 'heroImage',
-      type: 'defaultImage',
+      description: 'The array of images for the hero section, one will be picked at random each refresh',
+      type: 'array',
+      of: [
+        {
+          name: 'image',
+          type: 'defaultImage',
+          title: 'Image',
+        },
+      ],
+      options: {
+        layout: 'grid',
+      },
       validation: Rule => Rule.required()
     },
     {
