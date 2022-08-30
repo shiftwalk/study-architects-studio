@@ -10,6 +10,7 @@ import projects from './projects'
 // Common
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
+import childProject from './common/childProject'
 import singletonContact from './singletonContact'
 
 export default createSchema({
@@ -20,6 +21,7 @@ export default createSchema({
     singletonContact,
     projects,
     defaultImage,
+    childProject,
     seo
   ]),
 })

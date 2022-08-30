@@ -61,7 +61,14 @@ export default {
       options: {
         layout: 'grid',
       }
-    }
+    },
+    {
+      title: 'Child Projects',
+      name: 'childProjects',
+      description: "If this is added, this project will open with children and no parent, overriding the images above.",
+      type: 'array',
+      of: [{type: 'childProject', title: 'Child Project'}],
+    },
     // {
     //   name: 'slug',
     //   type: 'slug',
