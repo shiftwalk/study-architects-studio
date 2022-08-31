@@ -23,8 +23,20 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Address',
+      title: 'Address Line 1',
       name: 'address',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address Line 2',
+      name: 'addressLine2',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Address Line 3',
+      name: 'addressLine3',
       type: 'string',
       validation: Rule => Rule.required()
     }
