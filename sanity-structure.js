@@ -6,6 +6,7 @@ import {
   FiHome,
   FiCamera,
   FiMail,
+  FiPenTool,
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -41,6 +42,8 @@ export default () =>
         title: 'Projects',
         icon: FiCamera
       }),
+      S.divider(),
+      S.listItem().title('Press').child(S.documentTypeList('press').title('Press')).icon(FiPenTool),
       S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact').views(getPreview('contact'))).icon(FiMail),
     ]);

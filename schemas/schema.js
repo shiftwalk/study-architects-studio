@@ -6,6 +6,7 @@ import singletonHome from './singletonHome'
 
 // Documents
 import projects from './projects'
+import press from './press'
 
 // Common
 import seo from './common/seo'
@@ -20,6 +21,7 @@ export default createSchema({
     singletonHome,
     singletonContact,
     projects,
+    press,
     defaultImage,
     childProject,
     seo
